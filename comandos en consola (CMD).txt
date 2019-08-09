@@ -1,0 +1,39 @@
+[comando en consola para iniciar el proyecto en react: "npx create-react-app nombre-del-proyecto"]
+
+[create-react-app es una libreria en node.js, node.js tiene una base de datos donde hay diversas librerias. Una de esas es la que utilizaremos.]
+
+[nos movemos a la carpeta exercise-tracker: cd exercise-tracker]
+[npm start: Arranca el proyecto, se debe ejecutar en la carpeta que creo react, la cual es la que contiene el front end]
+
+
+[crear carpeta backend, abrir consola en esta carpeta y ejecutar el comando "npm init -y", el cual inicia un proyecto de node
+"npm i express cors mongoose dotenv" comando para instalar un servidor, se instala:
+*express (crea servidores)
+*cors (es una librería que permite a nuestro servidor leer datos de otro servidor)
+*mongoose 
+*dotenv]
+
+[luego hay que ejecutar el comando "npm i -g nodemon", resetea el servidor de backend cadavez que se guarda el código, para no hacerlo manualmente.
+nodemon es una dependencia de DESARROLLO NO DE PRODUCCIÓN, se suele instalar "npm i -D nodemon" para que el package.json sepa que es una librería de desarrollo, pero ahora no se 
+utilizará este metodo.]
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Si no hubiésemos efectuado toda la instalación anterior, los “require” express, cors, y mongoose, quedarían subrayados en rojo, dado que node no los encontraría
+express: Es un método que utilizará nuestra constante app para ser el servidor de express.
+PORT: Puerto, es un espacio de memoria el cual determina a donde se enviará cada paquete de información
+.use: Método para usar otro método, como por ejemplo cors, que permite la lectura entre servidores. Es un intermediario.
+express.json(): La comunicación entre servidores será de archivos json
+.find(): Es la consulta que se utilizaba en sql del tipo "SELECT* FROM...."
+.save(): Es la consulta que se utiliza para guardar datos en MONGODB.
+.then: "Luego" es algo que se hace despues de que se devuelve un valor de alguna solicitud. Se utiliza siempre despues de un find().
+res.json: Transforma res, la cual es una variable en un dato con formato json.
+.catch: Se utiliza para atrapar un error. Si surge un error se responde con algún formato de error.
+res.status(400): El tipo de error que se produjo, en este caso es el error 400, el número varía.
+.json('error: ' + err): err es una función anterior la cual contiene un string, en este caso, el formato json se utiliza para imprimir en pantalla
+
+
+
+
+
+env(environment)
+para cerrar la petición con el servidor; en consola control+c
